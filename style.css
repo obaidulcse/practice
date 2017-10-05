@@ -1,0 +1,74 @@
+*{margin: 0; padding: 0px;}
+@font-face{
+    font-family: 'cross-town';
+    src:url(../fonts/CrossTownPersonalUse.ttf);
+}
+.main_menu{min-height: 55px;background-color: red;    width: 960px;
+    margin: 10px auto;}
+.main_menu ul{list-style: none;}
+.main_menu ul li{
+    float: left;
+    border-right: 1px solid white;
+    position: relative;
+}
+
+.main_menu ul li:last-child{
+    border-right: none;
+    
+}
+.main_menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    padding: 17px 39px;
+    transition: 1s;
+}
+
+.main_menu ul li a:hover{
+    background-color: brown;
+/*    transform: scale(1.05);*/
+    transform: rotate(360deg) scale(1.05);
+    
+}
+
+
+.main_menu ul li ul{background-color: red;position: absolute;    width: 200px;top: -9999px;transition: 2s;}
+
+.main_menu ul li:hover ul{
+    top: 55px;
+}
+
+.main_menu ul li ul li{border-right: none;border-bottom: 1px solid white;}
+.main_menu ul li ul li:last-child{
+    border-bottom: none;
+}
+.main_menu ul li ul li a{
+    padding: 17px 10px;
+        width: 180px;
+}
+.main_menu ul li ul li a:hover{}
+
+.single_image{border: 1px solid black;
+padding: 30px;box-sizing: border-box;width: 30%;float: left;margin: 1.6%;}
+.single_image .image{
+    width: 200px;
+    margin: 0 auto;
+}
+.single_image .image img{
+    height: 300px;
+    width: 200px;
+    opacity: 0.5;
+    transition: 1.5s;
+}
+
+.single_image .image img:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+.single_image .caption{text-align: center;}
+.single_image .caption p{font-size: 24px;font-weight: bold;font-family: 'cross-town';}
+
